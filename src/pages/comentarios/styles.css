@@ -1,0 +1,83 @@
+.cont-comentario {
+  background: linear-gradient(rgba(0, 0, 0, 0.062), rgb(0, 0, 0)),
+    url("https://w.forfun.com/fetch/4d/4d26953bd6d9d2e77a747afa870c611d.jpeg?w=1470&r=0.5625");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.testimonials-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonials-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  padding-top: 80px;
+  color: black;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+  justify-content: center;
+}
+
+.testimonial-item {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.171);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+}
+
+.testimonial-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.testimonial-comment {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 5px 15px;
+}
+
+.testimonial-user-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.footer-coment {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonial-photo {
+    width: 80%;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
